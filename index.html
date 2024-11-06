@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> /* I googled it because I'm new to the meta tag.*/
     <script>
       function checkType(){
         var password = document.getElementById("password");
         var corAnswer = password.value;
-        if(corAnswer=="3/4"){
+        if(corAnswer=="1/2"){
           alert("Correct! You may now move on.");
           return true;
-        }else{
+        }
+        else{
           alert("Sorry, please try again.")
           return false;
         }
+      }
     </script>
-    <
+    <style>
+      .body{
+        margin:0;
+      }
+      .css_head{
+        font-size:90px;
+        text-align:center;
+        background-color: lime;
+      }
+      .css_main{
+        font-size:45px;
+        text-align:center;
+        background-color: purple;
+        color: white;
+      }
+  
+    </style>
   </head>
   <body>
-    
+    <p class="css_head">
+      Math: The Unexplored Ocean: Introduction to G5 Fractions
+    </p>
+    <p class="css_main">
+      If you were in G4, you might have learned about fractions, basically pieces of circles, squares, etc. It is used to share food with your friends equally, and doctors
+      can sometimes use it in your medicine doses. Right now, just type in the answer to the equation below and click the link to submit:
+    </p>
+    <p>45 is <input type="text" id="box" value=""/> of 90</p>
+    <a href="https://nikoskalnis.github.io/math-homepage/" onclick="checkType();">
+      Submit and Move On
+    </a>
   </body>
 </html>
